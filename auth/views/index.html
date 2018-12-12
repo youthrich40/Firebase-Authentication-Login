@@ -1,0 +1,46 @@
+<!doctype html>
+<html ng-app="myApp">
+
+<head>
+    <title>User Login and Sessions</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+</head>
+
+<body>
+    <!--<div ng-controller="myController">-->
+    <!--<h2 id="welcomeText">Welcome. You are Logged In as-->
+    <!--    <%= username %>-->
+    <!--</h2>-->
+    <!--    <a id="logoutLink" href="/logout">logout</a>-->
+    <!--    <a id="editLink" href="/user">Edit User</a>-->
+    <!--    <p>Place Your Code Here-->
+    <!--        <p>-->
+    <!--</div>-->
+
+    <form>
+        <div ng-controller="myController">
+            <h1>Welcome. You are Logged In as
+                <%= username %>
+            </h1>
+            <div class="question">
+                <a id="logoutLink" href="/logout"><input type="button" id="signUpLink" value="Sign Out" href="/logout"></a>
+            </div>
+            <div class="question">
+                <a id="editLink" href="/user"><input type="button" id="signUpLink" value="Edit User" href="/user"></a>
+            </div>
+            <div class="question">
+                <hr>
+            <span id="indexMsg"><%= msg %></span>
+            </div>
+            <div class="question">
+                <hr>
+            <span id="colorText">Color <%= color %></span>
+            </div>
+        </div>
+    </form>
+
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="/javascripts/my_app.js"></script>
+</body>
+
+</html>

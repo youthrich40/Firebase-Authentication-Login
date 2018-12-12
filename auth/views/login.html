@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>User Login and Sessions</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+</head>
+
+<body>
+    <div class="form-container">
+        <!--<p class="form-header">Login</p>-->
+        <!--<form method="POST" action="/login">-->
+        <!--    <label>Username:</label>-->
+        <!--    <input type="text" id="username" name="username"><br>-->
+        <!--    <label>Password:</label>-->
+        <!--    <input type="password" id="password" name="password"><br>-->
+        <!--    <input type="submit" id="login" value="Login">-->
+        <!--</form>-->
+
+        <form method="POST" action="/login">
+            <h1>User Login</h1>
+            <div class="question">
+                <input type="text" id="username" name="username"/>
+                <label>Username:</label>
+            </div>
+            <div class="question">
+                <input type="password" id="password" name="password">
+                <label>Password:</label>
+            </div>
+            <div class="question">
+                <input type="submit" id="login" value="Login">
+                <a id="signUpLink" href="/signup"><input type="button" id="signUpLink" value="Sign Up" href="/signup"></a>
+            </div>
+            <div class="question">
+                <hr><span id="loginMsg"><%= msg %></span>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
